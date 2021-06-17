@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            //test nombre premier
+            var nombre = 31
+        
+            function estPremier(nombre){
+                for (var i = 2;i < nombre; i++){
+                    if(nombre % i === 0){
+                        return false
+                    }
+                }
+                return true
+            } 
+          function multiple(a,b){
+              if(b=== undefined){
+                  b = 1
+              }
+              return a * b
+          }
+            
+
+          //Exercice eleves
+           var classA = [{
+               nom:'Marc',
+               moyenne: 15
+           }, {
+               nom:'Marion',
+               moyenne: 8
+           }, {
+               nom:'Antoinne',
+               moyenne: 4
+           }, {
+               nom: 'Jean',
+               moyenne: 14
+           }]
+           var classB = [{
+               nom:'Sebastien',
+               moyenne: 8
+           }, {
+               nom:'Marine',
+               moyenne: 4
+           }, {
+               nom:'Pedro',
+               moyenne: 14
+           }, {
+               nom: 'Violette',
+               moyenne: 14
+           }]
+         function afficheQuiALaMoyenne(eleves){
+             for(var i =0; i < eleves.length; i++ ) {
+                 var eleve = eleves[i]
+                 if(eleve.moyenne>= 10){
+                     console.log( eleve.nom + ' a la moyenne')
+                 }
+
+             }
+         }
+         afficheQuiALaMoyenne(classA)
+         afficheQuiALaMoyenne(classB)
+        </script>
+    </head>
+</html>
